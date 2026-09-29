@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografi Diri - S.F Azzahra</title>
+  <meta name="description" content="Biografi digital responsif S.F Azzahra - Profesional, Inovator, dan Pengembang Gagasan Kreatif berbasis di Jawa Tengah, Indonesia.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            maroon: {
+              50: '#fdf2f4',
+              100: '#fbe6e9',
+              200: '#f8d0d6',
+              300: '#f1aab5',
+              400: '#e5778b',
+              500: '#d44964',
+              600: '#be2e4b',
+              700: '#9f1d38',
+              800: '#831b31',
+              900: '#6f1b2d',
+              950: '#3d0a14',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      background-color: #faf7f7;
+      color: #262626;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-maroon-100 selection:text-maroon-800">
+
+  <!-- Header / Navigation Bar -->
+  <header class="w-full bg-white/80 backdrop-blur-md border-b border-maroon-100 sticky top-0 z-30 shadow-xs">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3 group">
+        <span class="w-9 h-9 rounded-full bg-maroon-800 text-white font-bold flex items-center justify-center text-sm shadow-sm group-hover:bg-maroon-900 transition-colors">
+          SA
+        </span>
+        <span class="font-serif font-bold text-xl tracking-tight text-neutral-900 group-hover:text-maroon-800 transition-colors">S.F Azzahra</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-neutral-600">
+        <a href="#tentang" class="hover:text-maroon-700 transition-colors">Tentang</a>
+        <a href="#keahlian" class="hover:text-maroon-700 transition-colors">Keahlian</a>
+        <a href="#kontak" class="text-maroon-800 font-semibold hover:text-maroon-900 transition-colors">Hubungi Saya</a>
+      </nav>
+      <a href="#kontak" class="inline-flex items-center justify-center px-4 py-2 rounded-full text-xs font-semibold bg-maroon-800 text-white hover:bg-maroon-900 transition-all shadow-sm hover:shadow active:scale-95">
+        Kirim Pesan
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="max-w-6xl mx-auto px-5 sm:px-6 py-10 md:py-16 w-full flex-1">
+    
+    <!-- 2 Kolom Layout (md:grid-cols-12, flex-col saat < 768px) -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-start">
+      
+      <!-- KOLOM KIRI (Profil Bulat & Skills Bar) -->
+      <section class="md:col-span-5 flex flex-col items-center md:items-start space-y-8 bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-maroon-100/80 shadow-sm">
+        
+        <!-- Foto Profil Bulat -->
+        <div class="relative group mx-auto md:mx-0">
+          <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden p-1.5 bg-gradient-to-tr from-maroon-800 via-maroon-600 to-rose-300 shadow-xl">
+            <img 
+              src="assets/images/WhatsApp_Image_2026-09-29_at_10.57.21.jpeg" 
+              onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBr8DcWXbTpaTYW2bZvJ6n2FvBq5WiR79NFtR8ywRIhSgnjLTeTWkaY5JoGxuqy93Fv_rRUnplypwmwS0ywfSb2CE52kV5CWWV1IhIyHyHOZDa-4km2apQy6wfKKseaKJ7SLC5dA-UvaIsqOXSo4cwiqWED7DrqpndBg_7XpJZ3Q8SuE-cqFA2GPvp0s0j-gSQ1mJn23LZoHEax4_fbVoE0mgZG20bqqDEeZUF1lw3ZcOTCFcbti3g_Y0XWp_iNue3HBAw';" 
+              alt="Foto Profil S.F Azzahra" 
+              class="w-full h-full object-cover object-top rounded-full transition-transform duration-500 group-hover:scale-105"
+            >
+          </div>
+          <span class="absolute bottom-2 right-4 bg-white text-maroon-800 text-xs font-bold px-3 py-1 rounded-full shadow-md border border-maroon-100 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Tersedia
+          </span>
+        </div>
+
+        <!-- Info Ringkas Mobile & Desktop -->
+        <div class="text-center md:text-left w-full border-b border-neutral-100 pb-5">
+          <h2 class="text-xl font-bold text-neutral-800">S.F Azzahra</h2>
+          <p class="text-sm text-neutral-500 flex items-center justify-center md:justify-start gap-1 mt-1">
+            <svg class="w-4 h-4 text-maroon-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            Jawa Tengah, Indonesia
+          </p>
+        </div>
+
+        <!-- Skills Bar -->
+        <div id="keahlian" class="w-full space-y-5">
+          <div class="flex items-center justify-between">
+            <h3 class="text-base font-bold text-neutral-900 tracking-wide uppercase text-xs text-maroon-800 flex items-center gap-2">
+              <svg class="w-4 h-4 text-maroon-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+              </svg>
+              Keahlian Utama
+            </h3>
+            <span class="text-xs text-neutral-400 font-medium">Tingkat Kemampuan</span>
+          </div>
+
+          <!-- Skill 1 -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-xs font-semibold text-neutral-700">
+              <span>Manajemen Proyek &amp; Kolaborasi</span>
+              <span class="text-maroon-800 font-bold">92%</span>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-full h-2.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-maroon-700 to-maroon-500 h-2.5 rounded-full transition-all duration-700" style="width: 92%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-xs font-semibold text-neutral-700">
+              <span>Komunikasi &amp; Public Relations</span>
+              <span class="text-maroon-800 font-bold">88%</span>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-full h-2.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-maroon-700 to-maroon-500 h-2.5 rounded-full transition-all duration-700" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-xs font-semibold text-neutral-700">
+              <span>Kreativitas &amp; Desain Konseptual</span>
+              <span class="text-maroon-800 font-bold">85%</span>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-full h-2.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-maroon-700 to-maroon-500 h-2.5 rounded-full transition-all duration-700" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="space-y-1.5">
+            <div class="flex justify-between text-xs font-semibold text-neutral-700">
+              <span>Penyusunan Konten &amp; Riset</span>
+              <span class="text-maroon-800 font-bold">80%</span>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-full h-2.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-maroon-700 to-maroon-500 h-2.5 rounded-full transition-all duration-700" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <!-- Badge tag skills tambahan -->
+          <div class="pt-3 flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-maroon-50 text-maroon-800 rounded-md border border-maroon-100">Adaptif</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-maroon-50 text-maroon-800 rounded-md border border-maroon-100">Problem Solving</span>
+            <span class="px-2.5 py-1 text-[11px] font-medium bg-maroon-50 text-maroon-800 rounded-md border border-maroon-100">Team Leadership</span>
+          </div>
+
+          <!-- Kutipan Filosofi / Motivasi -->
+          <div class="mt-4 pt-4 border-t border-maroon-100/70">
+            <div class="relative p-4 rounded-2xl bg-maroon-50/40 border border-maroon-100/80">
+              <svg class="w-5 h-5 text-maroon-600 mb-2 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+              </svg>
+              <p class="text-xs text-neutral-700 italic font-serif leading-relaxed">
+                “Setiap langkah kecil dalam belajar dan berproses adalah fondasi menuju karya yang bermakna. Konsistensi, integritas, dan keberanian untuk berinovasi akan selalu melahirkan dampak nyata.”
+              </p>
+              <div class="mt-2.5 flex items-center justify-between text-[11px] text-maroon-800 font-semibold">
+                <span class="tracking-wide">— Prinsip &amp; Motivasi Diri</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-maroon-700"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- KOLOM KANAN (Nama, Alamat, Tentang & Form Kontak) -->
+      <section class="md:col-span-7 flex flex-col space-y-8">
+        
+        <!-- Header Identitas & Bio -->
+        <div id="tentang" class="bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-maroon-100/70 shadow-sm relative overflow-hidden">
+          <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-maroon-50 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-maroon-50 border border-maroon-200 text-maroon-800 text-xs font-semibold tracking-wide uppercase mb-3">
+            Digital Biography
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-neutral-900 tracking-tight leading-tight">
+            S.F Azzahra
+          </h1>
+          
+          <div class="mt-3 flex items-center gap-2 text-maroon-800 font-medium text-sm sm:text-base">
+            <svg class="w-5 h-5 text-maroon-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <span class="font-semibold text-neutral-800">Alamat:</span> 
+            <span>Jawa Tengah, Indonesia</span>
+          </div>
+
+          <div class="mt-6 text-neutral-600 leading-relaxed text-sm sm:text-base space-y-3">
+            <p>
+              Halo! Saya adalah seorang profesional yang berdedikasi dan memiliki antusiasme tinggi dalam berinovasi, berorganisasi, serta mengembangkan gagasan-gagasan kreatif. Terbiasa bekerja secara kolaboratif dengan pemecahan masalah yang efektif dan berorientasi pada hasil nyata.
+            </p>
+            <p class="text-neutral-500 text-sm">
+              Berbasis di Jawa Tengah, saya selalu terbuka untuk peluang kolaborasi baru, diskusi proyek, maupun keterlibatan dalam berbagai inisiatif positif yang berdampak.
+            </p>
+          </div>
+
+          <!-- Highlight Metrik Sederhana -->
+          <div class="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-neutral-100 text-center">
+            <div class="p-3 bg-stone-50 rounded-2xl hover:bg-maroon-50 transition-colors">
+              <span class="block text-xl sm:text-2xl font-bold text-maroon-800">5+</span>
+              <span class="text-xs text-neutral-500 font-medium">Tahun Aktif</span>
+            </div>
+            <div class="p-3 bg-stone-50 rounded-2xl hover:bg-maroon-50 transition-colors">
+              <span class="block text-xl sm:text-2xl font-bold text-maroon-800">20+</span>
+              <span class="text-xs text-neutral-500 font-medium">Inisiatif &amp; Proyek</span>
+            </div>
+            <div class="p-3 bg-stone-50 rounded-2xl hover:bg-maroon-50 transition-colors">
+              <span class="block text-xl sm:text-2xl font-bold text-maroon-800">100%</span>
+              <span class="text-xs text-neutral-500 font-medium">Dedikasi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Kontak (Card Background Terang & Nuansa Maroon) -->
+        <div id="kontak" class="bg-white p-6 sm:p-8 rounded-3xl border-2 border-maroon-100 shadow-md relative overflow-hidden">
+          <!-- Aksen Garis Maroon Atas -->
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-maroon-800 via-maroon-600 to-rose-400"></div>
+
+          <div class="mb-6">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-maroon-800 mb-1">
+              <svg class="w-4 h-4 text-maroon-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              Hubungi Sekarang
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-neutral-900">Kirim Pesan</h3>
+            <p class="text-xs sm:text-sm text-neutral-500 mt-1">
+              Silakan isi formulir di bawah ini untuk terhubung langsung dengan saya.
+            </p>
+          </div>
+
+          <form id="contactForm" onsubmit="handleSubmit(event)" class="space-y-4">
+            
+            <!-- Input Nama -->
+            <div>
+              <label for="name" class="block text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1.5">
+                Nama Lengkap <span class="text-maroon-600">*</span>
+              </label>
+              <div class="relative">
+                <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl bg-maroon-50/40 border border-maroon-200 text-sm text-neutral-800 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-maroon-700 focus:border-transparent transition-all">
+              </div>
+            </div>
+
+            <!-- Input Email -->
+            <div>
+              <label for="email" class="block text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1.5">
+                Alamat Email <span class="text-maroon-600">*</span>
+              </label>
+              <div class="relative">
+                <input type="email" id="email" name="email" required placeholder="nama@domain.com" class="w-full px-4 py-3 rounded-xl bg-maroon-50/40 border border-maroon-200 text-sm text-neutral-800 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-maroon-700 focus:border-transparent transition-all">
+              </div>
+            </div>
+
+            <!-- Input Pesan -->
+            <div>
+              <label for="message" class="block text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1.5">
+                Pesan <span class="text-maroon-600">*</span>
+              </label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tuliskan pesan atau penawaran kolaborasi Anda di sini..." class="w-full px-4 py-3 rounded-xl bg-maroon-50/40 border border-maroon-200 text-sm text-neutral-800 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-maroon-700 focus:border-transparent transition-all resize-none"></textarea>
+            </div>
+
+            <!-- Tombol Kirim -->
+            <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-maroon-800 to-maroon-700 hover:from-maroon-900 hover:to-maroon-800 text-white font-semibold text-sm tracking-wide shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer active:scale-[0.99]">
+              <span>Kirim Pesan</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button>
+            <p class="text-[11px] text-center text-neutral-400 mt-2">
+              Pesan akan dijawab sesegera mungkin pada hari kerja.
+            </p>
+          </form>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full border-t border-maroon-100 bg-white/50 py-6 text-center text-xs text-neutral-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>© 2026 S.F Azzahra. Hak cipta dilindungi undang-undang.</p>
+      <p class="text-maroon-800 font-medium">Jawa Tengah • Indonesia</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      alert(`Terima kasih ${name}! Pesan Anda telah berhasil dikirim ke S.F Azzahra.`);
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>
